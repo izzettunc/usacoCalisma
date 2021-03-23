@@ -189,7 +189,6 @@ Stylizes the given class name in markdown style
 	def _style_class_name_md(class_name):
 	    
 	    class_name = DocstringStyler.escape(class_name)
-	    return f"## **{class_name}**`#!py3 class` {{ #{class_name} data-toc-label={class_name} }}\n\n"
 	
 
 	```
@@ -394,9 +393,7 @@ Stylizes the given function name in markdown style
 	@staticmethod
 	def _style_function_name_md(function_name, args):
 	    
-	    function_name = DocstringStyler.escape(function_name)
-	    return f"## **{function_name}**`#!py3 {args}` {{ #{function_name} data-toc-label={function_name} }}\n\n"
-	
+	    function_name = DocstringStyler.escape(function_name)	
 
 	```
 
@@ -424,7 +421,6 @@ Stylizes the given method name in markdown style
 	    
 	    class_name = DocstringStyler.escape(class_name)
 	    method_name = DocstringStyler.escape(method_name)
-	    return f"### *{class_name}*.**{method_name}**`#!py3 {args}` {{ #{method_name} data-toc-label={method_name} }}\n\n"
 	
 
 	```
